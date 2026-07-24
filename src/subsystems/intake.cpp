@@ -5,7 +5,7 @@
 
 pros::Motor intakeBottomLarge(21); // Lower 11W intake motor with port
 pros::Motor intakeBottomSmall(-5); // Lower 5.5W intake motor with port
-pros::Motor intakeTop(1); // Top intake motor with port
+pros::Motor intakeTop(21); // Top intake motor with port
 
 void storeBalls() {
     setMotorSpeed(intakeBottomLarge, 1_x);

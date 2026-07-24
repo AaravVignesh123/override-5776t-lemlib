@@ -4,12 +4,12 @@
 
 // Motor ports, motors, and motor groups
 
-const int8_t kDriveLFPort = -13;
-const int8_t kDriveLCPort = -12;
-const int8_t kDriveLBPort = 11;
-const int8_t kDriveRFPort = 18;
-const int8_t kDriveRCPort = 19;
-const int8_t kDriveRBPort = -14;
+const int8_t kDriveLFPort = -15; //idk if negative
+const int8_t kDriveLCPort = -19;
+const int8_t kDriveLBPort = -10;
+const int8_t kDriveRFPort = 13;
+const int8_t kDriveRCPort = 12;
+const int8_t kDriveRBPort = 11;
 pros::Motor driveLF(kDriveLFPort);
 pros::Motor driveLC(kDriveLCPort);
 pros::Motor driveLB(kDriveLBPort);
@@ -25,7 +25,7 @@ lemlib::Drivetrain drivetrain(
     &leftMotors,
     &rightMotors,
     11.5,  // wheel track width (distance between the centers of the wheels on opposite sides of the drive)
-    lemlib::Omniwheel::NEW_325,  // wheel diameter
+    lemlib::Omniwheel::NEW_275,  // wheel diameter
     450, // drivetrain rpm
     2 // horizontal drift - 2 for full omnis, 8 for traction
 );
